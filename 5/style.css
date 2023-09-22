@@ -1,0 +1,136 @@
+*{
+    margin: 0 auto ;
+    padding: 0;
+    font-family: Roboto ,Arial,sans-serif;
+    text-decoration: none;
+
+}
+.header{
+    height: 64px;
+    width: 100%;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.header img{
+    width: 210px;
+}
+.box{
+    margin-top: 20px;
+    max-width: 860px;
+    display: flex;
+}
+.box .right h1{
+    line-height: 2.75rem;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 29px 0 40px;
+}
+.box .right .orr{
+    width: 270px;
+    padding: 20px;
+    padding-right: 70px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+::placeholder{
+    font-size: 17px;
+    align-items: center;
+}
+.box .right h5{
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(79, 82, 84);
+    margin-top: 10px;
+}
+.box .right .occ{
+    margin: 15px;
+}
+.box .right .err{
+    width: 362px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 55px;
+}
+.ser{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(85, 139, 225);
+    border: none;
+    font-size: 14px;
+}
+
+
+
+
+
+.left{
+    border: 1px solid rgb(230, 224, 224);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 30px 30px;
+    width: 40%;
+}
+    
+.head{
+    display: flex;
+    border-bottom: 1px solid rgb(218,220,224);
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.head .icon img{
+    width: 50px;
+    margin: -15px 30px 30px -20px;
+}
+.head .icon p{
+    margin-left: -16px;
+    margin-top: -20px;
+}
+.head .tutu h3{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: -20px;
+    font-weight: 500;
+}
+.head .tutu p{
+    line-height: 1.25rem;
+    font-size: .875rem;
+    letter-spacing: .0142857143em;
+    font-weight: 100;
+    color: #777777;
+}
+
+
+.last{
+    text-align: start;
+    width: 92%;
+}
+.last img{
+    width: 250px;
+    margin-left: -15px;
+}
+.kk li i{
+    position: relative;
+}
+.last h1{
+    line-height: 2.25rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 28px 0 10px;
+}
+.kk li{
+  line-height: 30px;
+  margin: 10px;
+  margin-left: 20px;
+  list-style-image: url(https://www.gstatic.com/apps/signup/resources/ic_check.svg);
+}
+.kk li p{
+ font-size: 14px;
+ text-align: start;
+ 
+}
