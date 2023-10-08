@@ -11,9 +11,9 @@
     
 }
 section{
-    max-width: 1350px;
+    max-width: 1379px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 27px;
 }
 
 /*header*/
@@ -27,23 +27,29 @@ section{
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
-.flex .logo a{
-    margin-right:50px;
+.line-1 i{
+    margin-left: 11px;
+    font-size: 19px;
 }
+
 .flex .logo p{
     margin-left: 7px;
     margin-right: 7px;
 }
 .logo{
-    font-size: 28px;
+    font-size: 30px;
     font-family: AmstelvarAlpha;
     font-weight: 400;
     word-wrap: break-word;
     color: #000;
     display: flex;
-    margin-left: 190px;
+    margin-left: 230px;
+}
+
+.flex-right{
+    margin-right: -10px;
 }
 .flex-right a{
     color: #000;
@@ -63,15 +69,17 @@ section{
     border-top: 1px solid #E3E3E3;
 }
 .row{
-    margin-top: 30px;
+    margin-top: 32px;
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    margin-left: 10px;
 }
 .row li a{
-    font-size: 18.5px;
+    font-size: 16px;
     color: #000;
+    font-family: 'Open Sans', sans-serif;
 }
 .row li a:hover{
     color: #b62e2e;
@@ -95,58 +103,62 @@ section{
 .top-main .content p{
     font-size: 74px;
     margin-bottom: 50px;
-    margin-top: 60px;
+    margin-top: 10px;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
     
 }
 .top-main .content h3{
-    font-size: 30px;
+    font-size: 29px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-family: 'Roboto', sans-serif;
+    margin-left: 16px;
+    line-height: 25px;
 }
 .top-main .content button{
     padding: 20px 30px 20px 30px;
     background-color: #222222;
     color: #fff;
-    font-size: 27px;
-    margin-top: 40px;
+    font-size: 28px;
+    margin-top: 42px;
+    margin-left: 16px;
 }
 .top-main .content button:hover{
     background-color: #b62e2e;
 }
 .top-main .content i{
     margin-right: 6px;
-    font-size: 26px;
+    font-size: 24px;
 }
 .img-product img{
     padding: 80px 90px 60px 10px;
-    width: 28%;
-    border-radius: 40% 0 230px 0;
+    width: 27.5%;
+    border-radius: 35% 0 240px 0;
     position: absolute;
     overflow: hidden;
-    right: 320px;
+    right: 310px;
 }
 .boder{
     border-top-left-radius: 160px; 
     border-bottom-right-radius: 160px; 
     border: 2px rgba(0, 0, 0, 0.25) solid;
     width: 425px;
-    height: 550px;
+    height: 545px;
     
     
     margin-right: 90px;
-    margin-top: 105px;
+    margin-top: 100px;
 }
 .header .flam{
    position: absolute;
-   top: 610px;
+   top: 615px;
 }
 .header .flame{
     position: absolute;
     right: 0;
-    top: 350px;
+    top: 355px;
 }
 
 
@@ -161,8 +173,9 @@ section{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 10px;
 }
 
 
@@ -179,7 +192,7 @@ section{
     position: absolute;
     top: 1400px;
     font-size: 34px;
-    left: -30px;
+    left: -20px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
@@ -188,9 +201,10 @@ section{
 
 }
 .card-1 img{
-    width: 650px;
-    height: 670px;
+    width: 651px;
+    height: 672px;
     padding-bottom: 30px;
+    margin-left: 10px;
 }
 .card-2{
     position: absolute;
@@ -214,7 +228,7 @@ section{
 
 
 .grid{
-    margin-top: 70px;
+    margin-top: 55px;
 }
 .grid p{
     font-size: 50px;
@@ -223,14 +237,15 @@ section{
     font-weight: bold;
 }
 .sub{
-    margin-top: 40px;
+    margin-top: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 10px;
 }
 .sub .fist a{
     font-size: 16px;
-    margin-right: 38px;
+    margin-right: 35px;
     color: #8c8c8c;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -247,6 +262,7 @@ section{
     padding: 8px 18px 8px 18px;
     background-color: #000;
     text-align: center;
+    margin-left: 15px;
 }
 .second .but i{
     padding-right: 10px;
@@ -255,13 +271,14 @@ section{
 
 
 .card{
-    margin-top: 40px;
+    margin-top: 37px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     align-items: flex-start;
     gap: 22px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
+    margin-left: 10px;
 }
 
 .card-5 img{
@@ -282,7 +299,7 @@ section{
 .card-5 .bot-pro H3{
     font-size: 16px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .card-5 .bot-pro h2{
     font-size: 18px;
@@ -319,7 +336,7 @@ section{
     position: relative;
     overflow: hidden;
     background-color: #000;
-    margin-top: 125px;
+    margin-top: 120px;
   }
   
 
@@ -329,8 +346,8 @@ section{
     background-image: url(/img/1024px-Zara_Logo\ 1.png);
     background-repeat: no-repeat;
     position: absolute;
-    right: -85px;
-    top: 55px;
+    right: -110px;
+    top: 54px;
   }
 .zare-logo-sm{
     width: 200px;
@@ -339,13 +356,13 @@ section{
     background-repeat: no-repeat;
     position: absolute;
     right: 625px;
-    top: 250px;
+    top: 236px;
 }
 .zara-content{
     width: 500px;
     position: absolute;
-    right: 330px;
-    top: 400px;
+    right: 321px;
+    top: 368px;
     color: #fff;
     font-size: 26px;
     font-family: 'Roboto', sans-serif;
@@ -353,8 +370,8 @@ section{
 }
 .zara-content .zara-button{
     padding: 20px 30px 20px 30px;
-    margin-top: 40px;
-    font-size: 26px;
+    margin-top: 50px;
+    font-size: 28px;
 }
 
 
@@ -367,14 +384,102 @@ section{
 
 
 .best-sellers{
-    margin-top: 40px;
+    margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-    align-items: flex-start;
+   
     gap: 22px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
+    margin-left: 12px;
+    padding: px;
+
 }
+.grid-2{
+    margin-top: 110px;
+    font-size: 50px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+
+}
+.grid-2 p{
+    align-items: center;
+    text-align: center;
+}
+.sub-2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+.sub-2 .fist-2 a{
+    font-size: 16px;
+    margin-right: 27px;
+    color: #8c8c8c;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+
+}.card-6 img{
+    width: 100%;
+}
+.card-6 .bot-product{
+    padding: 1px;
+    
+    
+}
+.card-6 .bot-product p{
+    font-size: 17px;
+    color: #484747;
+    float: left;
+    font-weight: 100;
+    margin-top: 15px;
+    padding-left: 10px;
+
+}
+.card-6 .bot-product h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 13px;
+    margin-left: 10px;
+    
+}
+.card-6 .bot-product h2{
+    font-size: 18px;
+    float: right;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-left: -20px;
+    padding-right: 10px;
+}
+.card-6 .bot-product h2 p{
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-top: 3px;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -387,10 +492,10 @@ section{
 .follow-product{
     width: 100%;
     background-color: #f3f4f4;
-    margin-top: 80px;
+    margin-top: 110px;
 }
 .follow div p{
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
@@ -405,9 +510,12 @@ section{
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    padding: 5px;
+    margin-left: 7px;
+    
 }
 .bot-coment{
-    margin-top: -30px;
+   margin-top: -5px;
 }
 .input-email{
     text-align: center;
@@ -415,17 +523,18 @@ section{
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     
 }
 .input-user input{
-    width: 623px;
+    width: 645px;
     font-size: 16px;
     font-weight: 600;
     padding: 10px;
     background-color: rgb(247, 247, 247);
     border-bottom:  2px  black solid;
-    margin-top: 20px;
+    margin-top: 22px;
+    margin-left: 15px;
 }
 ::placeholder{
     padding-left: 5px;
@@ -433,8 +542,9 @@ section{
 .submit-button{
     width: 93px;
     border-bottom: 2px  black solid;
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 34px;
+    margin-left: 25px;
+    padding-bottom: 10px;
 
 }
 button{
@@ -455,21 +565,23 @@ button{
 
 
 .footer{
-    margin-top: 110px;
+    margin-top: 105px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 .footer-0{
     width: 390px;
 }
 
 .footer-0 a{
-    margin-bottom: 35px;
-    line-height: 40px;
+    margin-bottom: 15px;
+    line-height: 36px;
+    padding: 11px;
+
 }
 .logo-1{
-    font-size: 30px;
+    font-size: 31px;
     font-family: AmstelvarAlpha;
     font-weight: 400;
     word-wrap: break-word;
@@ -485,6 +597,7 @@ button{
     line-height: 30px;
     font-weight: 100;
     color: #474747;
+    margin-left: 10px;
 }
 .icon{
     display: flex;
@@ -492,15 +605,17 @@ button{
 }
 .icon i{
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 22px;
     font-size: 20px;
     margin-right: 20px;
+    margin-left: 5px;
 }
 .footer-1{
     width: 60%;
     align-items: center;
-    margin-left: 120px;
-    line-height: 35px;
+    margin-left: 130px;
+    line-height: 36px;
+   margin-top: 5px;
 }
 .footer-1 p{
     font-size: 16px;
@@ -508,6 +623,7 @@ button{
     color: #000;
     font-weight: 600;
     margin-bottom: 10px;
+    
 }
 .footer-1 a{
     color: #000;
@@ -529,7 +645,7 @@ button{
     background-color: #232737;
 }
 .footer-bottom{
-    padding: -20px;
+    padding: 15px;
 
 }
 .footer-bottom .re-ot{
