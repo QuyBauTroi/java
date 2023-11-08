@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {
+    background-color: #e4e2e2;
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu {
+width: 250px;
+position: relative;
+box-shadow: 8px 10px 5px -4px rgba(0, 0, 0, 0.027);
+
+}
+
+.menu ul li{
+    background-color: white;
+    list-style: none;
+    padding:0 0 0 8px ;
+    display: block;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #757575;
+    font-weight: 400;
+}
+
+.menu ul li i {
+    display: none;
+    padding-right: 8px;
+}
+
+.menu ul li:hover a{
+    color: orange;
+
+}
+
+.menu ul li:hover {
+background-color: #ffffffd0;
+}
+
+
+.menu ul a:hover i,.menu ul li:hover i {
+    display: inline-block;
+    color: orange;
+
+}
+.menu ul li:hover a{
+    color: orange;
+
+}
+
+.submenu {
+    position: absolute;
+    background-color: white;
+    left: 100%;
+    top: 0;
+    width: 250px;
+    display: none;
+    color: #757575;
+
+}
+
+.menu:hover .submenu {
+    display:inline-block;
+}
+
+
+.submenu ul li:hover {
+    color: orange;
+background-color: #ffffffd0;
+
+}
+
+
+.submenu ul li{
+    background-color: white;
+    list-style: none;
+    padding:0 0 0 8px ;
+    display: block;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.wrap-submenu {
+    position: relative;
+    background-color: black;
+    box-shadow: 8px 10px 5px -4px rgba(0, 0, 0, 0.027);
+}
+
+
+.submenu2 {
+    position: absolute;
+    background-color: white;
+    left: 100%;
+    top: 0;
+    width: 250px;
+    display: none;
+    color: #757575;
+
+}
+
+.menu .submenu:hover .submenu2 {
+    display:inline-block;
+}
+
+.submenu2 ul li:hover {
+    color: orange;
+background-color: #ffffffd0;
+
+}
+
+
+.submenu2 ul li{
+    background-color: white;
+    list-style: none;
+    padding:0 0 0 8px ;
+    display: block;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.wrap-submenu2 {
+    position: relative;
+    background-color: black;
+    box-shadow: 8px 10px 5px -4px rgba(0, 0, 0, 0.027);
+}
