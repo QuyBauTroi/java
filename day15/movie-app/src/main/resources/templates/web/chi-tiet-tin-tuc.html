@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trang chủ</title>
+
+    <link rel="shortcut icon" href="/web-assets/image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/web-assets/image/favicon.ico" type="image/x-icon">
+
+    <!--Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+          integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+          integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/web-assets/css/style.css">
+</head>
+<body>
+<th:block th:replace="~{/web/fragment/header :: header}"></th:block>
+
+<section class="py-4 bg-body-secondary">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-body-tertiary"><a th:href="@{/static}">Motchill</a></li>
+                    <li class="breadcrumb-item text-body-tertiary"><a th:href="@{/tin-tuc}">Tin tức</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" th:text="${blog.getTitle()}">Top 10 Bộ Phim Hoa Ngữ Sắp Chiếu Năm 2024</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h2 th:text="${blog.getTitle()}">Top 10 Bộ Phim Hoa Ngữ Sắp Chiếu Năm 2024</h2>
+                    <p class="text-body-tertiary" >by Motchill on <th:block th:text="${blog.getCreatedAt()}"></th:block>
+                    </p>
+                </div>
+                <div th:text="${blog.getContent()}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-4 bg-body-secondary">
+    <div class="container bg-dark-subtle rounded-4 p-4">
+        <div class="comment-card">
+            <h2>Bình luận</h2>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Để lại bình luận..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-secondary text-white" type="button" id="button-addon2">Bình luận</button>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <div class="comment-info bg-light-subtle rounded-5 p-3 mt-3" th:each="comment :${comments}">
+                        <div class="d-flex align-items-center">
+                            <img th:src="${comment.getUser().getAvatar()}" alt="Avatar" class="rounded-circle" style="width: 50px; height: 50px;">
+                            <h5 class="ms-2" th:text="${comment.getUser().getName()}">Người Bình Luận</h5>
+                            <p class="pt-2 ms-2 text-body-tertiary" th:text="${comment.getCreatedAt()}"></p>
+                        </div>
+                        <div class="comment-content ps-1 pt-2" th:text="${comment.getContent()}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<th:block th:replace="~{/web/fragment/footer :: footer}"></th:block>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/web-assets/js/common.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".movie-list").owlCarousel({
+            items: 4,
+            margin: 20,
+            loop: true
+        });
+    });
+</script>
+
+</body>
+</html>
